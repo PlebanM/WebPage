@@ -1,0 +1,192 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+    ====================================
+    Body
+    ====================================
+*/
+
+body {
+    color: rgb(97, 97, 97);
+
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+    color: #4a83ce;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #0059ff;
+  }
+
+  p a {
+    border-bottom: 1px solid #0059ff;
+  }
+  
+  /*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+header{
+    background-color: #eeeef0;
+    padding-bottom: 40px;
+
+
+}
+
+.logo{
+    float: left;
+    box-align: center;
+    font-size: 26px;
+    font-weight: 200;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    padding-top: 5px;
+    letter-spacing: 2px;
+
+}
+
+.primary-nav{
+    text-align: right;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    padding-top: 20px;
+
+
+}
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+div {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  
+.container{
+  margin: 0 auto;
+  width: 960px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.content{
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.content:before,
+.content:after {
+  content: "";
+  display: table;
+}
+.content:after {
+  clear: both;
+}
+.content {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer {
+    background-color: #eeeef0;
+    font-size: 14px;
+    padding-bottom: 22px;
+    padding-top: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .primary-footer small {
+    float: left;
+    font-weight: 400;
+  }
+
+.social-buttons img{
+    width: 40px;
+    height: 40px;
+}
+
+
+  /*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+    text-align: right;
+  }
