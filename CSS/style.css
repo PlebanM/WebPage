@@ -55,6 +55,8 @@ table {
 
 body {
     color: rgb(97, 97, 97);
+    font-size: 20px;
+    
 
 }
 
@@ -103,6 +105,7 @@ header{
 
 .primary-nav{
     text-align: right;
+    font-size: 18px;
     font-weight: 400;
     letter-spacing: .5px;
     text-transform: capitalize;
@@ -131,6 +134,7 @@ div {
 .content{
     width: 800px;
     margin: 0 auto;
+    padding: 0;
 
 }
 
@@ -152,6 +156,49 @@ div {
   clear: both;
   *zoom: 1;
 }
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+h1, h2, h3, h4 {
+    color: #4a83ce;
+}
+h2{
+    line-height: 44px;
+}
+
+
+/*
+  ========================================
+  Content
+  ========================================
+*/
+
+.content{
+    border-left: 4px solid #79a9e7;
+    border-style: double;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .profile-photo{
+    width: 45%;
+    height: 400px;
+    border-radius: 10%;
+}
+.content .description{
+    width: 45%;
+    height: 400px;
+    background-color: #e4e6e740;
+    border-radius: 10%;
+
+}
+
+
 
 /*
   ========================================
