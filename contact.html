@@ -23,16 +23,21 @@
     <div class="content contact-page">
 
         <h1>If You wan't contact with me, send me a message!</h1>
-        <form class="form-overall">
-            <label for="name">Your name</label>
-            <input class="input-name" type="text" name="name" placeholder="Write your name" >
-            <label for="email">Your e-mail</label>
-            <input  class="input-email" type="email" name="email" placeholder="Write your email">
-            <label for="message">Your message</label>
+        <form class="form-overall" id="form-contact" name="contact-form" onchange="validateForms()" novalidate="novalidate">
+            
+            <label for="name" novalidate>Your name</label> 
+            <input id="input-name" class="input-name" type="text" name="name" placeholder="Write your name">
+            
+            <label for="email" >Your e-mail</label><p id="email"></p>
+            <input  id="input-email" class="input-email" type="email" name="email" placeholder="Write your email">
+            
+            <label for="message">Your message </label><p id="message"></p>
             <textarea class="input-message" name="message" placeholder="Write message" ></textarea>
-            <input class="btn" type="button" value="Send" disabled>
+            
+            <input class="btn" id="contact-btn" type="submit" value="Send" disabled="true" onclick="validateInputEmail()">
+            <p id="button-id"></p>
         </form>
-
+        
     </div>
     <!-- Footer -->
     <footer class="primary-footer container">
@@ -43,7 +48,7 @@
         
         <small>&copy; Marcin Pleban 2019</small>
 
-        <nav class="nav ">
+        <nav class="nav">
             <a href="index.html">Home</a> | 
             <a href="contact.html">Contact</a> | 
             <a href="flyfishing.html">Fly Fishing</a>
