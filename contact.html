@@ -20,21 +20,21 @@
 
     </header>
 
-    <div class="content contact-page">
+    <div class="content contact-page" onchange="validateForms()">
 
         <h1>If You wan't contact with me, send me a message!</h1>
-        <form class="form-overall" id="form-contact" name="contact-form" onchange="validateForms()" novalidate="novalidate">
+        <form class="form-overall" id="form-contact" name="contact-form"  novalidate="novalidate">
             
-            <label for="name">Your name</label> 
-            <input id="input-name" class="input-name" type="text" name="name" placeholder="Write your name">
+            <label>Your name</label>
+            <input id="inputName" class="input-name" type="text" name="name" placeholder="Write your name">
             
-            <label for="email" >Your e-mail</label>
-            <input  id="input-email" class="input-email" type="email" name="email" placeholder="Write your email">
+            <label>Your e-mail</label>
+            <input  id="inputEmail" class="input-email" type="email" name="email" placeholder="Write your email">
             
-            <label for="message">Your message </label>
-            <textarea class="input-message" name="message" placeholder="Write message" ></textarea>
+            <label>Your message</label>
+            <textarea id="inputMessage" name="message" placeholder="Write message" ></textarea>
             
-            <button class="btn" id="contact-btn" type="submit" disabled="true" onclick="validateInputEmail()">Send</button>
+            <button class="btn" disabled id="contact-btn" onclick="validateInputEmail()" type="submit">Send</button>
             <p id="button-id"></p>
         </form>
         
